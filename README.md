@@ -1,73 +1,219 @@
-# React + TypeScript + Vite
+# 🍽️ Grand Meritorious Restaurant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Digital Restaurant POS (Point of Sale) System
 
-Currently, two official plugins are available:
+Grand Meritorious Restaurant POS is a modern digital restaurant management system designed to replace the traditional paper-based ordering process. Waiters can take orders directly from mobile phones, tablets, or desktops, while restaurant owners can efficiently manage menu items, staff, tables, billing, and business analytics from a centralized admin dashboard.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The application delivers a fast, paperless, and user-friendly experience with a premium white-and-gold interface optimized for restaurants of all sizes.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# 🎯 Project Purpose
 
-## Expanding the ESLint configuration
+### Problem
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Many restaurants still rely on handwritten orders, resulting in:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Slow ordering process
+- Human errors
+- Delayed kitchen communication
+- Manual billing
+- Difficult sales tracking
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Solution
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Grand Meritorious Restaurant POS digitizes the entire ordering workflow by allowing waiters to take orders electronically and instantly send them to the kitchen. Bills are generated automatically with GST and service charges, while administrators gain real-time insights into restaurant performance.
+
+---
+
+# ✨ Features
+
+## Waiter Panel
+
+- Secure Login
+- Digital Menu
+- Table Selection
+- Quantity Control
+- Special Order Notes
+- Live Kitchen Status
+- GST Billing
+- PDF Invoice
+- Cash Payment
+- UPI Payment
+- Card Payment
+- Printable Bill
+
+---
+
+## Admin Panel
+
+- Dashboard Analytics
+- Revenue Reports
+- Daily Sales
+- Monthly Sales
+- Popular Dishes
+- Menu Management
+- Category Management
+- Table Management
+- Waiter Management
+- Customer Reports
+- Tax Reports
+- CSV Export
+
+---
+
+# 📊 Dashboard
+
+- Total Revenue
+- Daily Orders
+- Active Tables
+- Popular Dishes
+- Monthly Sales
+- Business Reports
+
+---
+
+# 🎨 UI Design
+
+- Premium White Theme
+- Elegant Gold Accents
+- Pure Vegetarian Branding
+- Modern Serif Typography
+- Smooth Animations
+- Clean Dashboard
+- Responsive Components
+
+---
+
+# 📱 Responsive Design
+
+The application is fully responsive.
+
+### Desktop
+
+✔ Modern Dashboard
+
+✔ Large Analytics
+
+✔ Data Tables
+
+---
+
+### Tablet
+
+✔ Flexible Layout
+
+✔ Responsive Cards
+
+✔ Touch Friendly
+
+---
+
+### Mobile
+
+✔ Mobile Navigation
+
+✔ Touch Optimized Buttons
+
+✔ Responsive Menu
+
+✔ Responsive Forms
+
+✔ Responsive Dashboard
+
+✔ Auto Grid Layout
+
+---
+
+# 🛠 Tech Stack
+
+| Category | Technology |
+|------------|------------|
+| Frontend | React 19 |
+| Language | TypeScript |
+| Build Tool | Vite |
+| Styling | Tailwind CSS |
+| State Management | Zustand |
+| Routing | React Router DOM |
+| Charts | Recharts |
+| Icons | Lucide React |
+| Animation | Framer Motion |
+| Deployment | Vercel |
+
+---
+
+# 📂 Modules
+
+## Customer
+
+- Digital Menu
+- Table Selection
+- Order Status
+- Billing
+
+## Waiter
+
+- Login
+- Dashboard
+- Orders
+- Kitchen Status
+- Payments
+
+## Admin
+
+- Dashboard
+- Sales Analytics
+- Menu Management
+- Category Management
+- Table Management
+- Waiter Management
+- Reports
+- Settings
+
+---
+
+# 🚀 Installation
+
+```bash
+git clone https://github.com/yourusername/Grand-Meritorious-Restaurant-POS.git
+
+cd Grand-Meritorious-Restaurant-POS
+
+npm install
+
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# 🌐 Deployment
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Frontend deployed on **Vercel**.
+
+---
+
+# 🔮 Future Improvements
+
+- Kitchen Display System (KDS)
+- QR Code Ordering
+- Customer Feedback
+- Inventory Management
+- Online Reservations
+- Loyalty Program
+- Multi Branch Support
+- WhatsApp Bill Sharing
+- AI Sales Forecasting
+
+---
+
+# 👨‍💻 Developer
+
+**Deshna Joshi**
+
+M.Sc. IT (Data Analytics)
+
+---
+
+# ⭐ Support
+
+If you like this project, don't forget to star the repository.
