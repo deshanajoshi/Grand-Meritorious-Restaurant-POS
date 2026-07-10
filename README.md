@@ -210,6 +210,8 @@ Frontend deployed on **Vercel**.
 
 **Deshna Joshi**
 
+**Harshit Gupta**
+
 M.Sc. IT (Data Analytics)
 
 ---
